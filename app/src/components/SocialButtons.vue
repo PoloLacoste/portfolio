@@ -28,7 +28,6 @@ export default {
   overflow: hidden;
   opacity: 0.99;
   border-radius: 30%;
-  box-shadow: 0 0 30px 0 rgba(0, 0, 0, 0.05);
   -webkit-transition: all 0.35s cubic-bezier(0.31, -0.105, 0.43, 1.59);
   transition: all 0.35s cubic-bezier(0.31, -0.105, 0.43, 1.59);
 }
