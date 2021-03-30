@@ -25,7 +25,7 @@ const texts = [
   'Apprentice',
   'Student',
   'Thales',
-  'Developper'
+  'Developer'
 ]
 
 let tagCloud;
