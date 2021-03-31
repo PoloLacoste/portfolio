@@ -1,0 +1,59 @@
+<template>
+</template>
+
+<script lang="ts">
+import Vue from 'vue';
+const TagCloud = require('TagCloud');
+
+const texts = [
+  'Flutter',
+  'Dart',
+  'Rust',
+  'Angular',
+  'Vue.js',
+  'NuxtJS',
+  'Typescript',
+  'Javascript',
+  'C++',
+  'C',
+  'C#',
+  'Yaml',
+  'Json',
+  'CNAM',
+  'EFREI',
+  'Apprentice',
+  'Student',
+  'Thales',
+  'Developer'
+]
+
+let tagCloud: any;
+
+function initTagCloud(container: Element) {
+  tagCloud = TagCloud(container, texts, {
+    initSpeed: 'fast',
+    maxSpeed: 'fast',
+    radius: window.innerHeight * (window.innerHeight > window.innerWidth ? 0.2 : 0.35),
+    itemClass: 'text-gray-200 text-sm md:text-xl'
+  });
+}
+
+export default Vue.extend({
+  name: 'TagCloud',
+  mounted: function() {
+
+    window.onresize = () => {
+      if(tagCloud != null) {
+        tagCloud.destroy();
+      }
+      initTagCloud(this.$el);
+    }
+
+    initTagCloud(this.$el);
+  }
+});
+</script>
+
+<!-- Add "scoped" attribute to limit CSS to this component only -->
+<style scoped>
+</style>
