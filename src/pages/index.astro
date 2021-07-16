@@ -1,0 +1,23 @@
+---
+import SocialButtons from '../components/SocialButtons.vue';
+import TagCloud from '../components/TagCloud.vue';
+---
+
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Jean-Michel REMEUR</title>
+    <link rel="icon" type="image/svg+xml" href="/favicon.svg">
+    <link rel="stylesheet" href="/style/global.css">
+</head>
+<body>
+    <main class="w-screen h-screen flex flex-col justify-center items-center bg-gray-800">
+        <TagCloud client:idle class="h-full flex items-center" />
+        <div class="flex flex-col mb-2 items-center">
+            <h1 class="text-white text-md md:text-xl">Jean-Michel REMEUR</h1>
+            <SocialButtons class="mt-4" />
+        </div>
+    </main>
+</body>
+</html>
