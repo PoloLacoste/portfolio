@@ -5,7 +5,7 @@
 
 <script >
 
-const TagCloud = require('TagCloud');
+import TagCloud from 'TagCloud';
 
 const texts = [
   'Flutter',
@@ -13,6 +13,7 @@ const texts = [
   'Rust',
   'Angular',
   'Vue.js',
+  'Astro',
   'Typescript',
   'Javascript',
   'C++',
@@ -54,7 +55,3 @@ export default {
   }
 };
 </script>
-
-<!-- Add "scoped" attribute to limit CSS to this component only -->
-<style scoped>
-</style>
